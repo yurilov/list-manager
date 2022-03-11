@@ -1,4 +1,4 @@
-const refs = {
+EXPORTconst refs = {
   pairListRef: document.querySelector(".pair-list"),
   inputRef: document.querySelector(".js-input"),
 };

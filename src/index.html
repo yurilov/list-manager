@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form-wrap">
+      <form class="form">
+        <label>
+          <p>Name/Value Pair</p>
+          <input type="text" class="js-input">
+          <button type="submit" data-action="add">Add</button>
+        </label>
+        <p>Name/Value Pair list</p>
+        <ul class="pair-list">
+    
+        </ul>
+        <ul class="buttons">
+          <li class="buttons__item" data-sort="name"><button type="button">Sort by Name</button></li>
+          <li class="buttons__item" data-sort="value"><button type="button">Sort by Value</button></li>
+          <li class="buttons__item" data-action="delete"><button type="button">Delete</button></li>
+          <li class="buttons__item" data-action="show-xml"><button type="button">Show XML</button></li>
+        </ul>
+      </form>
+    </div>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
