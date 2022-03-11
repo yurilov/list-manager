@@ -12,21 +12,21 @@
         <form class="form">
             <label>
                 <p>Name/Value Pair</p>
-                <input type="text">
-                <button type="submit" data-add>Add</button>
+                <input type="text" class="js-input">
+                <button type="submit" data-action="add">Add</button>
             </label>
             <p>Name/Value Pair list</p>
             <ul class="pair-list">
 
             </ul>
             <ul class="buttons">
-                <li class="buttons__item" data-sort-name><button type="button">Sort by Name</button></li>
-                <li class="buttons__item" data-sort-value><button type="button">Sort by Value</button></li>
-                <li class="buttons__item" data-delete><button type="button">Delete</button></li>
-                <li class="buttons__item" data-show-xml><button type="button">Show XML</button></li>
+                <li class="buttons__item" data-sort="name"><button type="button">Sort by Name</button></li>
+                <li class="buttons__item" data-sort="value"><button type="button">Sort by Value</button></li>
+                <li class="buttons__item" data-action="delete"><button type="button">Delete</button></li>
+                <li class="buttons__item" data-action="show-xml"><button type="button">Show XML</button></li>
             </ul>
         </form>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
