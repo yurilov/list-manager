@@ -1,0 +1,66 @@
+body {
+  background-color: $whiteColor;
+  color: $primaryTextColor;
+  font-family: $mainFont;
+  letter-spacing: 0.03em;
+}
+
+body.buy-modal-open,
+.franchise-modal-open,
+.locations-modal-open,
+.recipe-modal-open {
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 34px;
+    padding-right: 34px;
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 115px;
+    padding-right: 115px;
+    width: $desktop;
+  }
+}
+
+.btn {
+  min-width: 50px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $whiteColor;
+  background-color: $accentColor;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px $btnShadow;
+  border-radius: 4px;
+
+  transition: background-color $transition-duration $timing-function;
+}
+
+.title {
+  margin-bottom: 12px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+
+  color: $blackColor;
+}

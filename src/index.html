@@ -12,26 +12,31 @@
     />
   </head>
   <body>
-    <div class="form-wrap">
-      <form class="form">
-        <label>
-          <p>Name/Value Pair</p>
-          <input type="text" class="js-input">
-          <button type="submit" data-action="add">Add</button>
-        </label>
-        <p>Name/Value Pair list</p>
-        <ul class="pair-list">
-    
-        </ul>
-        <ul class="buttons">
-          <li class="buttons__item"><button type="button" data-sort="name">Sort by Name</button></li>
-          <li class="buttons__item"><button type="button" data-sort="value">Sort by Value</button></li>
-          <li class="buttons__item"><button type="button" data-action="delete">Delete</button></li>
-          <li class="buttons__item"><button type="button" data-action="show-xml">Show XML</button></li>
-        </ul>
-      </form>
-    </div>
-    
+    <section>
+      <div class="container form-wrap">
+        <form class="form">
+          <label class="form__label">
+            <p class="form__title title">Name/Value Pair</p>
+            <input type="text" class="js-input form__input">
+            <button type="submit" data-action="add" class="form__btn btn">Add</button>
+          </label>
+        </form>
+        </div>
+
+        <div class="container output-wrap">
+          <p class="output__title title">Name/Value Pair list</p>
+          <div class="list-wrap">
+            <ul class="pair-list list">
+            </ul>
+            <ul class="buttons list">
+              <li class="buttons__item"><button type="button" class="btn buttons__btn" data-sort="name">Sort by Name</button></li>
+              <li class="buttons__item"><button type="button" class="btn buttons__btn" data-sort="value">Sort by Value</button></li>
+              <li class="buttons__item"><button type="button" class="btn buttons__btn" data-action="delete">Delete</button></li>
+              <li class="buttons__item"><button type="button" class="btn buttons__btn" data-action="show-xml">Show XML</button></li>
+            </ul>
+          </div>
+        </div>
+    </section>    
     <script src="./index.js"></script>
   </body>
 </html>
