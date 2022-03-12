@@ -4,7 +4,7 @@ import { deleteBtnHandler } from '../src/js/deleteBtnHandler';
 import { sortByNameHandler, sortByValueHandler } from './js/sortHandler';
 import refs from './js/getRefs';
 
-refs.formWrapRef.addEventListener('click', e => {
+refs.sectionRef.addEventListener('click', e => {
   e.preventDefault();
   addPairHandler(e);
   deleteBtnHandler(e);
