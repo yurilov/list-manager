@@ -3,15 +3,54 @@
   justify-content: center;
   padding: 20px;
   flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .pair-list {
-  width: 70%;
+  min-width: 320px;
   height: 100px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width: $tablet) {
+    height: 200px;
+    min-width: 500px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 800px;
+  }
 }
 
 .buttons {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    margin-top: -15px;
+    margin-left: -8px;
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    display: block;
+  }
+
+  &__item {
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-top: 15px;
+      margin-left: 8px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 8px;
+      }
+    }
+  }
 }
