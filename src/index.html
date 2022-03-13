@@ -32,11 +32,21 @@
               <li class="buttons__item"><button type="button" class=" btn buttons__btn" data-sort="name">Sort by Name</button></li>
               <li class="buttons__item"><button type="button" class=" btn buttons__btn" data-sort="value">Sort by Value</button></li>
               <li class="buttons__item"><button type="button" class=" btn buttons__btn" data-action="delete">Delete</button></li>
-              <li class="buttons__item"><button type="button" class=" btn buttons__btn" data-action="show-xml">Show XML</button></li>
+              <li class="buttons__item"><button type="button" class=" btn buttons__btn" data-action="show-xml">Show as XML</button></li>
             </ul>
           </div>
         </div>
-    </section>    
+    </section> 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-button" data-hide-xml>
+          X
+        </button>
+        <div class="xml">
+          
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
